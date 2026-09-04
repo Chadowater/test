@@ -1,0 +1,17 @@
+{
+    "terminal.integrated.profiles.windows": {
+        "PowerShell (MinGW)": {
+            "path": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+            "args": [
+                "-NoExit",
+                "-Command",
+                "& {",
+                "    $env:Path = \"c:\\Users\\alexa\\Documents\\Ingé4\\test\\.github\\workflows\\bin;$env:Path\";",
+                "    Set-Alias -Name make -Value \"c:\\Users\\alexa\\Documents\\Ingé4\\test\\.github\\workflows\\bin\\mingw32-make.exe\" -Scope Global;",
+                "    Write-Output \"Using MinGW binaries from c:\\Users\\alexa\\Documents\\Ingé4\\test\\.github\\workflows\\bin\"",
+                "}"
+            ]
+        }
+    },
+    "terminal.integrated.defaultProfile.windows": "PowerShell (MinGW)"
+}
